@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/daigof/bourbon-tests/issues"
   },
-  "homepage": "https://github.com/daigof/bourbon-tests#readme"
+  "homepage": "https://github.com/daigof/bourbon-tests#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^2.0.6"
+  }
 }
