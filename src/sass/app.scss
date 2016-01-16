@@ -1,3 +1,25 @@
-body{
-  background-color: red;
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+body {
+  background-color: yellow;
+}
+.box {
+  width: 500px;
+  height: 50px;
+  @include perspective(300px);
+  @include perspective-origin(30% 30%);
+  @include linear-gradient(#1e5799, #2989d8);
+}
+@include selection {
+  background-color: #ffbb52;
+}
+section {
+  @include outer-container;
+  aside {
+    @include span-columns(3);
+  }
+  article {
+    @include span-columns(9);
+  }
 }

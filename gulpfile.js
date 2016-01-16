@@ -14,11 +14,16 @@ gulp.task( 'clean', function() {
 } );
 
 gulp.task( 'sass', function() {
-  return sass( 'src/sass/app.scss' ).on( 'error', sass.logError ).pipe( gulp.dest( 'dist' ) );
+  // var paths = require("bourbon").includePaths;
+  // console.log( require("bourbon").includePaths );
+  return sass( 'src/sass/app.scss', {
+    verbose:true
+    // loadPath: ['src/sass/bourbon']
+  } ).on( 'error', sass.logError ).pipe( gulp.dest( 'dist' ) );
 } );
 
 gulp.task( 'static', function() {
-  gulp.src( 'src/**/*.html').pipe( gulp.dest( 'dist' ) );
+  gulp.src( 'src/**/*.html' ).pipe( gulp.dest( 'dist' ) );
 } );
 
 gulp.task( 'default', [ 'clean', 'sass', 'static' ] );
