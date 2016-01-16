@@ -1,0 +1,19 @@
+{
+  "name": "bourbon-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/daigof/bourbon-tests.git"
+  },
+  "author": "Fortes Diego",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daigof/bourbon-tests/issues"
+  },
+  "homepage": "https://github.com/daigof/bourbon-tests#readme"
+}
